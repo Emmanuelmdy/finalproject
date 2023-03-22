@@ -1,0 +1,686 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';font-size: 22px;
+}
+#bannière{
+    background: linear-gradient(rgba(0,0,0,0.5),#000b2c),url(images/STUDIOMATIC__LEOFAVREAU-27.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: sticky;
+}
+
+.logo1{
+    width: 310px;
+    position: fixed;
+    top: 3.5%;
+    left: 1.5%;
+    object-fit: cover;
+    background-color:#000b2c;
+
+}
+
+.bannière-texte{
+    text-align: center;
+    color: #fff;
+    padding-top: 225px;
+}
+.bannière-texte h1{
+    font-size: 90px;
+    font-family: 'Kaushan Script';
+}
+.bannière-texte p{
+    font-size: 20px;
+    font-style: italic;
+}
+.banniière-btn{
+    margin: 70px auto 0;
+}
+.banniière-btn a{
+    width: 130px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding:  0;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.1s;
+}
+.banniière-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #d05300;
+    z-index: -1;
+    transition: 0.5s;
+}
+.banniière-btn a:hover span{
+    width: 100%;
+}
+.banniière-btn a:hover{
+    color: #000;
+}
+
+.Junior-bannière{
+    font-size: -3200px;
+}
+
+#navdroit{
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    right: -250px   ;
+    top: 0;
+    background: #000b2c;
+    z-index: 2;
+    transition: 0.2s;
+}
+nav ul li{
+    list-style: none;
+    margin: 45px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#menubtn{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    top: 15px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menubtn img{
+    width: 20px;
+    margin-top: 15px;
+
+}
+
+@media screen and (max-width: 770px) {
+    .bannière-texte h1{
+        font-size: 44px;
+    }
+    .banniière-btn a{
+        display: block;
+        margin: 20px auto;
+
+    }
+    
+}
+
+
+#feature{
+    margin: auto;
+}
+.titretexte{
+    text-align: center;
+    padding-bottom: 70px;
+    margin-top: 0em;
+}
+.titretexte p{
+    margin: auto;
+    top: 20px;
+    font-size: 20px;
+    color: #0f0a3b;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.titretexte p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#0f0a3b,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.titretexte h1{
+    font-size: 50px;
+    font-family: 'Kaushan Script';
+    
+}
+.Mabibliotheque .heading .musiccontenu .titretexte{
+    font-family: 'Kaushan Script';
+    font-size:x-large;
+    color: #d05300;
+}
+.Mabibliotheque .instructions .biblio h1{
+    align-items: center;
+    font-family: 'Kaushan Script';
+    font-size:x-large;
+    color: #fff;
+}
+
+.Mabibliotheque{
+    background: #000b2c;
+}
+.Mabibliotheque .heading{
+    font-size: 3rem;
+    padding: 1.%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0.5rem rem #000;
+    color: #fff;
+
+}
+.Mabibliotheque .heading .nom1 .titretexte1{
+    font-family: 'Kaushan Script';
+    font-size:60px;
+    color: #fff;
+    position: relative;
+
+}
+.nom1{
+    color: #fff;
+}
+
+.Mabibliotheque .musiccontenu{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    left: 10%;
+    margin-top: 0.5em;
+
+}
+.Mabibliotheque .musiccontenu .stats{
+    display: flex;
+    justify-content: space-between;
+}
+.Mabibliotheque .musiccontenu .stats .stat1{
+    margin-left: 13em;
+    font-family: 'Kaushan Script';
+    font-style:oblique ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+}
+.Mabibliotheque .musiccontenu .stats .stat2{
+    margin-left: 5em;
+    font-family: 'Kaushan Script';
+    font-style:oblique ;
+    text-decoration: underline;
+}
+.Mabibliotheque .musiccontenu .stats .stat3{
+    margin-left: 2em;
+    font-family: 'Kaushan Script';
+    font-style:oblique ;
+    text-decoration: underline;
+}
+
+.Mabibliotheque .musiccontenu .box{
+    height: rem;
+    width: 97%;
+    display: flex;
+    align-items: center;
+    background: #000b2c;
+    border-radius: 1rem;
+   
+    overflow: hidden;
+}
+.Mabibliotheque .musiccontenu .box .image{
+    height: 10%;
+    width: 10%;
+}
+.Mabibliotheque .musiccontenu .box .image img{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    
+}
+.Mabibliotheque .musiccontenu .box .music{
+    width: 35%;
+}
+.Mabibliotheque .musiccontenu .box .music audio{
+    width: 100%;
+    outline: #000b2c;
+}
+.Mabibliotheque .musiccontenu .box .music audio::-webkit-media-controls-enclosure{
+    background: #d05300;
+}
+@media (max-width:600px){
+    .Mabibliotheque .musiccontenu .box{
+        height: 27rem;
+        width: 90%;
+        flex-flow: column;
+    }
+
+    .Mabibliotheque .musiccontenu .box .image{
+        height: 80%;
+        width: 100%;
+    }
+    .Mabibliotheque .musiccontenu .box .music{
+        height: 20%;
+        width: 100%;
+    }
+}
+.Mabibliotheque .musiccontenu .box .titlesongs{
+    font-size: 80%;
+    margin-left: 1.7em;
+    align-items:flex-start;
+    color: #fff;
+    border-radius:0.2em;
+}
+.Mabibliotheque .musiccontenu .box .genre1{
+    font-size: 80%;
+    margin-left: 3.2em;
+    align-items:center;
+    color: #fff;
+    border-radius:0.2em;
+    flex-flow: column;
+}
+.Mabibliotheque .musiccontenu .box .genre2{
+    font-size: 80%;
+    margin-left: 2.8em;
+    align-items:center;
+    color: #fff;
+    border-radius:0.2em;
+    flex-flow: column;
+}
+.Mabibliotheque .musiccontenu .box .genre3{
+    font-size: 80%;
+    margin-left: 4em;
+    align-items:center;
+    color: #fff;
+    border-radius:0.2em;
+    flex-flow: column;
+}
+.Mabibliotheque .musiccontenu .box .genre4{
+    font-size: 80%;
+    margin-left: 5.6em;
+    align-items:center;
+    color: #fff;
+    border-radius:0.2em;
+    flex-flow: column;
+}
+.Mabibliotheque .musiccontenu .box .genre5{
+    font-size: 80%;
+    margin-left: 1.4em;
+    align-items:center;
+    color: #fff;
+    border-radius:0.2em;
+    flex-flow: column;
+}
+
+@media screen and (max-width: 770px) {
+    .bannière-texte h1{
+        font-size: 44px;
+    }
+    .box .image{
+        display: block;
+        margin: 20px auto;
+
+    }
+    .box .image .music{
+        display: block;
+        margin: 20px auto;
+
+    }
+    .box .image .music .genre1 h1{
+        display: block;
+        margin: 20px auto;
+
+    }
+    .Mabibliotheque .stats .stat1 .nom-titre{
+        display: block;
+        margin: 20px auto;
+
+    }
+    .Mabibliotheque .stats .stat2 .nom-titre{
+        display: block;
+        margin: 20px auto;
+
+    }
+}
+
+
+
+#Kits{
+    padding: 100;
+    background-color: #000b2c;
+    margin-top: 0.5em;
+}
+.titretexte1{
+    color: #fff;
+    align-items: center;
+    font-family: 'Kaushan Script';
+    font-size: 250%;
+    margin-left: 2rem;
+}
+.titretexte5{
+    color: #d05300;
+    align-items: center;
+    font-family: 'Kaushan Script';
+}
+.headingkits{
+    align-items: center;
+    margin-left: 30.5rem;
+    top: 0em;
+}
+.texteskits1{
+    color: white;
+    font-style: italic;
+    font-family: 'Kaushan Script';
+    align-items: center;
+    margin-left: 22em;
+    margin-top: 2em;
+}
+.texteskits2{
+    color: white;
+    font-style: italic;
+    font-family: 'Kaushan Script';
+    align-items: center;
+    margin-left: 27.5em;
+}
+.feuille2{
+    margin-left: 24em;
+}
+.packs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em;
+}
+.cartier{
+    border-radius: 5rem;
+    margin-left: 19em;
+}
+.cartier a{
+    color: #d05300;
+    text-decoration-line: none;
+}
+.marstrap{
+    margin-right: 21.5em;
+}
+.marstrap a{
+    color: #d05300;
+    text-decoration-line: none;
+}
+.cartier a h1{
+    align-items: center;
+    margin-left: 6.5em;
+}
+.marstrap a h1{
+    align-items: center;
+    margin-left: 4.7em;
+}
+.marstrap a h2{
+    align-items: center;
+    margin-left: 2.5em;
+}
+
+
+#blog{
+    padding:100;
+    background-color: #000b2c;
+    margin-top: -1.9em;
+}
+.blogtexte1 h1{
+    color: #fff;
+    align-items: center;
+    font-family: 'Kaushan Script';
+    font-size: 250%;
+    margin-left: 31rem;
+    margin-top: 1em;
+}
+.blogtexte1 h2{
+    color: #d05300;
+    align-items: center;
+    font-family: 'Kaushan Script';
+    margin-left: 33.7em;
+    margin-top: -1.5em;
+}
+
+.blogtexte2 h2{
+    color: #fff;
+    align-items: center;
+    font-style: italic;
+  
+    margin-left: 22em;
+    margin-top: 1.5em;
+}
+.blogtexte2 h3{
+    color: #fff;
+    align-items: center;
+   font-style: italic;
+    margin-left: 24em;
+    margin-top: -1em;
+}
+.Infos{
+    display: flex;
+    justify-content: space-between;
+}
+.infos5{
+    margin-left: 15em;
+    margin-top: 3em;
+}
+.paragraphe{
+    color: #fff;
+    font-size: 88%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    margin-right:14em;
+    margin-top: 4em;
+}
+.infostextes{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+.infostexte1{
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 5em;
+    margin-left: 2em;
+}
+.infostexte1 h1{
+    color: #d05300;
+    font-size: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.infostexte1 h2{
+    color: #fff;
+    font-size: 70%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.infostexte2{
+    margin-right: 3.7em;
+}
+.infostexte2 h1{
+    color: #d05300;
+    font-size: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.infostexte2 h2{
+    color: #fff;
+    font-size: 70%;
+    margin-right: em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.infostexte3{
+    margin-right: 2em;
+}
+
+.infostexte3 h1{
+    color: #d05300;
+    font-size: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.infostexte3 h2{
+    color: #fff;
+    font-size: 70%;
+    padding: 0.5em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.infostexte4{
+    margin-top: -3em;
+    margin-left: 2em;
+    margin-right: 5em;
+    padding: 3em;
+}
+
+.infostexte4 h1{
+    color: #d05300;
+    font-size: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.infostexte4 h2{
+    color: #fff;
+    font-size: 70%;
+    padding: 0.5em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.infostexte5{
+    margin-left: 2em;
+    margin-right: 8em;
+}
+
+.infostexte5 h1{
+    color: #d05300;
+    font-size: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.infostexte5 h2{
+    color: #fff;
+    font-size: 70%;
+    padding: 0.5em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.infostexte5 img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    cursor: pointer;
+}
+.infostexte5 h3{
+    color:#fff;
+    font-size: 75%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 15em;
+ }
+ .infostexte5 h4{
+    color: #fff;
+    font-size: 70%;
+    padding: 0.5em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 11em;
+    margin-top: em;
+}
+.infostexte5 h5{
+    color: #d05300;
+    font-size: 75%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 15.6em;
+    margin-top: -1.5em;
+    text-decoration: underline;
+}
+
+
+#footer{
+    padding:100;
+    background-color: #000b2c;
+    margin-top: -1.9em;
+}
+.footertext h1{
+    color: #fff;
+    align-items: center;
+    font-family: 'Kaushan Script';
+    font-size: 250%;
+    margin-left: 28rem;
+    margin-top: 1em;
+
+}
+.footertext h2{
+    color: #d05300;
+    align-items: center;
+    font-family: 'Kaushan Script';
+    margin-left: 14.3em;
+    margin-top: em;
+    font-size: 200%;
+}
+.imagecob{
+    margin-left: 13em;
+    margin-top: 2.5em;
+}
+.proposfoot{
+    display: flex;
+    justify-content: space-around;
+}
+.followers{
+    color: #d05300;
+    margin-right: 30em;
+    margin-top: 3em;
+}
+.followers h1{
+    margin-left: 3.5em;
+    margin-top: -3em;
+}
+.ecoutes{
+    color: #d05300;
+    margin-left: 29.1em;
+    margin-top: -10.5em;
+}
+.ecoutes h1{
+    margin-left: 3.5em;
+    margin-top: -3em;
+}
+.instrus{
+    color: #d05300;
+    margin-left: 29.3em;
+    margin-top: 3em;
+}
+.instrus h1{
+    margin-left: 3.5em;
+    margin-top: -2.5em;
+}
+.reseaux{
+    margin-top: 6em;
+    margin-left: 30em;
+}
+.WhatsApp{
+    margin-top: -2em;
+    margin-left: 4em;
+}
+.telegram{
+    margin-top: -2em;
+    margin-left: 8em;
+}
+.youtube{
+    margin-left: 2em;
+    margin-top: 0.5em;
+}
+.beatstars{
+    margin-left: 6em;
+    margin-top: -2em;
+}
+.pied{
+    background-color: #0f0a3b;
+    color: #fff;
+}
+.pied1{
+    font-size: small;
+    align-content: center;
+    margin-left: 43em;
+    margin-top: 0.1em;
+}
+.pied h2{
+    font-size: small;
+    align-content: center;
+    margin-left: 54.5em;
+    margin-top: 0.1em;
+}
